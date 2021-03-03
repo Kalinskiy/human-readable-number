@@ -48,7 +48,8 @@ module.exports = function toReadable (number) {
     ];
 
     let hundredsText = hundreds ? onesArr[hundreds] + " hundred " : "";
-    let thousandsText = thousand ? onesArr[thousand] + " thousand " : ""
-    return thousandsText + hundredsText + tensArr[tens] + onesArr[ones];
+    let thousandsText = thousand ? onesArr[thousand] + " thousand " : "";
+    return (thousandsText + hundredsText + tensArr[tens] + onesArr[ones]).trim();
   
 }
+
